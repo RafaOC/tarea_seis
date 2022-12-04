@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Servicios</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <div *ngFor="let univer of lista" class="containerBox">
+      <div class="forma">
+        <p><strong>Nombre:</strong> {{ univer.nombre }}</p>
+        <p><strong>Descripcion:</strong> {{ univer.descripcion }}</p>
+        <img [height]="100" [src]="univer.foto">
+        <hr>
+        <p>--------------------------------------------------------------</p>
+      </div>
+    </div>
+  </ion-card>
+
+</ion-content>

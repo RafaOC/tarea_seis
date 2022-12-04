@@ -38,7 +38,16 @@ const routes: Routes = [
   {
     path: 'portada',
     loadChildren: () => import('./portada/portada.module').then( m => m.PortadaPageModule)
+  },
+  {
+    path: 'prueba',
+    loadChildren: () => import('./prueba/prueba.module').then( m => m.PruebaPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./registro/registro.module').then( m => m.RegistroPageModule)
   }
+
 ];
 
 @NgModule({

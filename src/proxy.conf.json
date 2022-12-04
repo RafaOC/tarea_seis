@@ -1,0 +1,6 @@
+{
+    "/api/*": {
+    "target": "https://adamix.net/defensa_civil/",
+    "secure": false
+    }
+}
